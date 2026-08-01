@@ -1,0 +1,492 @@
+# The Spider-Lair: Evolved
+
+> Definitive Public Release Changelog
+
+The Spider-Lair: Evolved is the largest and final overhaul the world has received. It brings traversal, combat, multiplayer competition, progression, customization, filming, and community contributions together in one connected experience.
+
+## Highlights
+
+- Completely rebuilt web swinging, zipping, climbing, wallrunning, and movement.
+- Full open-world combat with stealth, gadgets, enemy factions, drones, and environmental interactions.
+- More than 60 hand-built combat zones with escalating difficulty and major boss encounters.
+- Opt-in PvP, Zombies Mode, Threat Level progression, and Spider-Coin rewards.
+- New Headquarters, Apartment, Lair Shop, Cinema tools, and patron personalization features.
+
+## Contents
+
+- [Traversal and Movement](#traversal-and-movement)
+- [Climbing, Wallrunning, and Surface Movement](#climbing-wallrunning-and-surface-movement)
+- [Web Bridges](#web-bridges)
+- [Web Interaction and Physics](#web-interaction-and-physics)
+- [Gadget and Equipment System](#gadget-and-equipment-system)
+- [Portals](#portals)
+- [Slow Motion and Cloaking](#slow-motion-and-cloaking)
+- [Human Enemies and Combat AI](#human-enemies-and-combat-ai)
+- [Enemy Perception and Stealth](#enemy-perception-and-stealth)
+- [Combat Reactions and Damage Rules](#combat-reactions-and-damage-rules)
+- [Riot Shields and Overshields](#riot-shields-and-overshields)
+- [Drones](#drones)
+- [Throwable Objects and Environmental Combat](#throwable-objects-and-environmental-combat)
+- [Combat Sectors and Open-World Gameplay Loop](#combat-sectors-and-open-world-gameplay-loop)
+- [Spotted Events and Boss Encounters](#spotted-events-and-boss-encounters)
+- [Zombies Mode](#zombies-mode)
+- [Threat Level and Difficulty](#threat-level-and-difficulty)
+- [PvP](#pvp)
+- [The Lair Shop and Spider-Coins](#the-lair-shop-and-spider-coins)
+- [New Locations](#new-locations)
+- [Evolved Menu and Interface](#evolved-menu-and-interface)
+- [Crosshairs, Aiming, and Combat Feedback](#crosshairs-aiming-and-combat-feedback)
+- [Weather, Audio, and Immersion](#weather-audio-and-immersion)
+- [Camera and Cinema Tools](#camera-and-cinema-tools)
+- [Patron World Personalization](#patron-world-personalization)
+
+---
+
+## Traversal and Movement
+
+- Web swinging has been completely rewritten with more physical, rope-like movement.
+- Web ropes now behave more naturally while swinging, pulling, and changing direction.
+- Previously fired webs can remain attached to the environment instead of immediately disappearing.
+- Players can have up to eight standard webs active in the world.
+- Swinging now has a velocity cap to keep traversal controllable at extreme speeds.
+- Swing assist has been reworked to support the new swinging physics.
+- Web zipping now uses a stamina and recharge system.
+- Zip strength and maximum zip speed have been increased.
+- Perch Zipping allows players to accurately zip directly to targeted ledges and surfaces.
+- Players can zip directly to Web Bridges and portals.
+- Physzipping allows players to launch themselves while tethered to the same object or enemy with both hands.
+- Movement now begins at a walking pace and accelerates naturally into a run.
+- Stopping gradually returns the player to walking speed.
+- Being airborne or tethered immediately transitions the player to running speed.
+- Sprinting provides an additional burst of speed beyond the normal running pace.
+- Desktop players can sprint with Shift when double-tap flipping is enabled.
+- VR players can sprint through increased hand movement.
+- Landing at high velocity carries momentum into ground movement.
+- High-speed landings can create a temporary slide before returning to regular movement.
+- Flipping now follows the player’s head rotation for consistent controls at any body orientation.
+- Flipping can automatically align the player with the trajectory of their webs.
+- A separate Rotate on Web Grab option allows automatic rotation to be limited to Web Grabbing.
+- Full-body feet tracking is supported for combat.
+- Avatar size now affects web thickness, menu positioning, flip collision size, movement input scaling, and footstep pitch.
+
+---
+
+## Climbing, Wallrunning, and Surface Movement
+
+- Omnidirectional climbing has been added.
+- Players can rotate, pivot, and roll themselves with the thumbsticks while climbing.
+- A hand can be prepared before touching a wall, causing the player to immediately stick on contact.
+- Players can walk on ceilings.
+- Wallrunning can automatically snap the player onto nearby surfaces.
+- Players can walk around corners and transition between connected walls.
+- Pressing Jump while climbing transitions directly into wallrunning.
+
+---
+
+## Web Bridges
+
+- Players can create up to ten Web Bridges.
+- Web Bridges are local to each player rather than synchronized globally.
+- Players can zip directly to Web Bridges.
+- Bridges briefly snap the player into position without permanently locking them in place.
+- Bridges use perch-style targeting for more accurate zipping.
+- Holding both wrists together for three seconds clears all active Web Bridges and portals.
+
+---
+
+## Web Interaction and Physics
+
+- Enemies can be tied to walls and other surfaces.
+- Enemies can be tied to one another.
+- Enemies can be tethered to moving objects.
+- Objects such as drones, grenades, rockets, and environmental props can be webbed together.
+- Wrapped enemies visually inherit the player’s selected web appearance.
+- Players can strike enemies while holding them.
+- Web grabbing focuses on retracting the tether for more deliberate web-climbing behavior.
+
+---
+
+## Gadget and Equipment System
+
+- A dedicated Gadget Wheel has been added.
+- The Gadget Wheel can be opened by hovering your right hand over your left and selecting an option with the right hand.
+- Tapping the equipment input switches between primary webs and the selected secondary gadget.
+- Players can choose and save their own gadget loadout.
+- Gadgets can remain active while switching back to standard webs when supported.
+- Gadget ammunition and ability energy use dedicated recharge systems.
+- Players can choose whether abilities activate from the head button or through the alternate movement input.
+
+### Web Bullets
+
+- Web Bullets now use target seeking.
+- Hits to an enemy’s head can deal damage.
+- Shots to an injured enemy’s legs can trip and ragdoll them.
+- Shots to the arms or torso can wrap eligible enemies.
+- Riot enemies must generally be attacked from behind to be wrapped.
+- Web Bullets can push physical objects.
+- Repeated shots can detonate explosive barrels.
+
+### Sonic Blaster
+
+- The Sonic Blaster fires a forceful blast from either hand.
+- Blasts can throw enemies backward.
+- The recoil can be used for locomotion and additional aerial jumps.
+
+### Web Shield
+
+- The Web Shield protects the player from incoming damage and degrades as it absorbs hits.
+- The shield can remain active while switching back to standard webs.
+- Players can target an enemy with the shield hand and temporarily store that lock.
+- The shield can then be thrown toward the stored target.
+- A thrown shield can bounce from the target and return to the player.
+- The shield remains usable while swinging.
+- Shield attacks increase physical impact force without directly increasing punch damage.
+- Shield damage and destruction are communicated through dedicated visual and audio effects.
+
+### Web Fists
+
+- Web Fists greatly increase the knockback force of punches.
+- Each hand can deliver up to eight enhanced strikes.
+- Web Fists can remain active while the player switches back to standard webs.
+- Picking up an object temporarily disables the fist on that hand until the object is released.
+
+### Web Bow
+
+- The Web Bow fires fast, long-range web arrows.
+- Arrows can penetrate enemies.
+- Each arrow deals 33 damage.
+- Headshots deal 66 damage.
+- Arrows use target tracking.
+- Each bow provides eight arrows before consuming its equipment charge.
+- Bow arrows can detonate grenades and rockets.
+- Players can return to standard tethering while the bow remains active.
+
+### Web Staff
+
+- The Web Staff provides a dedicated melee weapon.
+- Spinning staff attacks deal 15 damage per hit.
+- Non-spinning staff attacks deal 5 damage per hit.
+- The staff can be used while regular webs are disabled.
+
+---
+
+## Portals
+
+- Portals have been integrated into the Gadget Wheel and web-shooter system.
+- Portals use both hands for placement.
+- Players can lock onto portals with their crosshairs.
+- Players can zip directly into and through portals.
+- Dedicated portal perch points support more accurate traversal.
+- Enemies and ragdolls can travel through portals.
+- Enemies can be thrown directly into portals.
+- Portal visuals respond to the selected quality preset.
+- Portals and Web Bridges can be cleared together by holding both wrists together.
+
+---
+
+## Slow Motion and Cloaking
+
+- Slow motion has been added as a local player ability.
+- Slow motion affects traffic, player physics, enemy ragdolls, world objects, particles, and audio.
+- Dedicated screen and sound effects indicate when slow motion is active.
+- The slow-motion visual effect can be independently disabled.
+- Cloaking has been added as an alternate ability.
+- Cloaking reduces enemy visibility and hides the player’s PvP indicator.
+- Footstep noise can still reveal a cloaked player.
+- Being detected while acting under cloak immediately disables the ability and drains its stored energy.
+
+---
+
+## Human Enemies and Combat AI
+
+- Fully voiced human enemies have been added.
+- Enemy archetypes include melee fighters, bludgeoners, handgun users, riot units, snipers, SMG units, rocketeers, drone operators, and specialized support enemies.
+- Enemies use hazard detection around rooftops and ledges.
+- Enemy accuracy, damage, and perception scale with combat difficulty.
+- Enemies use distinct damage values and firing intervals based on their weapon type.
+- Snipers patrol normally but maintain distance rather than directly chasing the player.
+- Enemies equipped with two-handed weapons can throw grenades, except for rocketeers.
+- Enemy grenades can be grabbed, webbed, and thrown back.
+- Rockets can be caught with webs or hands and redirected using the opposite hand’s crosshair.
+- Enemies can deploy explosive tripwires.
+- Snipers, operators, and zombies can deploy grapple hooks.
+- Enemy grapple hooks can attach to walls, objects, drones, and players.
+- A grappled player can be shocked and damaged.
+- SMG and rocket enemies can deploy parachutes.
+- Parachuting rocket enemies can continue firing while airborne.
+- Players can swing from parachuting enemies without immediately pulling them down.
+- Using both hands allows the player to take control of a parachuting enemy’s movement.
+- Enemies can suffer lethal long falls.
+- Wrapped or hanging enemies are exempt from normal terminal-velocity calculations.
+- High-velocity enemy impacts create dedicated crash effects.
+- Enemies use over two dozen contextual taunts and combat voice lines.
+- Additional reactions play when enemies are tethered, collide with one another, parachute, grapple, or are physically held.
+- A new Sniper Tower enemy can be pulled down with webs or destroyed using explosives and thrown objects.
+- Web yanking an enemy from below can slam them directly into the ground.
+
+
+---
+
+## Enemy Perception and Stealth
+
+- A full stealth system has been added.
+- Spider-Sense uses directional 3D audio to indicate where detection is coming from.
+- Enemy awareness is displayed through a gradient directly over the character.
+- Enemy markers use distance-scaled beacons.
+- Enemy types are identified through clothing colors.
+- Enemy health is communicated through equipment lights and visible body damage.
+- Enemy outlines are hidden after the enemy becomes fully aware of the player.
+- Enemy hearing is based on the player’s actual footstep audio.
+- Moving slowly or remaining airborne allows hearing detection to decay.
+- Enemies can still hear the player while cloaked.
+- An unprepared stealth target begins calling for backup.
+- Defeating the target before the call prevents reinforcements.
+- Overshielded enemies must be struck from behind and cannot be webbed normally, except for the legs or head.
+- Unaware enemies can be instantly knocked out by attacks from behind.
+- Ground Pound attacks immediately reveal the player to nearby enemies.
+- Enemies can be webbed in the face to prevent them from calling for help.
+
+---
+
+## Combat Reactions and Damage Rules
+
+- Light attacks trigger directional hit reactions instead of immediately throwing enemies into ragdoll.
+- Reactions include face, side, body, and gut-hit animations.
+- Stronger attacks and impacts can transition enemies into ragdoll.
+- Ragdolled enemies can continue taking damage.
+- Enemies can be killed while wrapped, although wrapped targets receive reduced damage.
+- Unconscious enemies receive reduced incoming damage.
+- A lethal attack against a conscious enemy first places them into a concussed state.
+- Additional damage after concussion can defeat the enemy.
+- The instant-kill impact threshold is 60 meters per second.
+- Regular web shots require sustained webbing to fully wrap an enemy.
+- Explosions can throw back every enemy class, including shielded targets.
+- Player damage, including PvP damage, temporarily reduces movement speed.
+- Players cannot manually respawn while injured or while enemies are actively aware of them.
+- Low health is communicated through screen effects and warning audio.
+
+---
+
+## Riot Shields and Overshields
+
+- Riot shields primarily protect the torso and arms.
+- Riot enemies can be attacked from behind or targeted at the feet.
+- Webbing the front of a riot shield shocks the player through the tether.
+- Overshielded enemies can appear among regular enemy groups.
+- Overshielded enemies resist frontal web attacks unless they have been ragdolled.
+- Webbing an overshielded enemy’s chest can shock the player.
+
+---
+
+## Drones
+
+- Drone Operators deploy drones as a second set of eyes.
+- Operators continue deploying replacement drones until incapacitated.
+- Drone Operators will flee from the player.
+- Drones scan the environment when neither the drone nor its operator has detected the player.
+- Drones can be destroyed with webbing, projectiles, thrown objects, or melee attacks.
+- Drones can be picked up and thrown.
+- Drones fall inactive when their operator is defeated.
+
+### Drone Types
+
+- **Laser Drone:** Fires a laser at the player to inflict burn damage.
+- **Razer Drone:** Charges the player with a blade before retreating and preparing another attack.
+- **Taser Drone:** Fires electrical projectiles that drain 25% of player stamina and 25% of gadget ammunition.
+- **Blazer Drone:** Uses a close-range flamethrower and can overload and explode when attacked.
+
+---
+
+## Throwable Objects and Environmental Combat
+
+- Throwable objects spawn near enemy encounters.
+- Available objects include boxes, explosive barrels, fire hydrants, electrical boxes, manhole covers, and newsstands.
+- Players can tether objects and aim throws with their free hand.
+- Releasing the tether launches the object toward the opposite hand’s crosshair.
+- The same aiming system applies to enemies, drones, grenades, and rockets.
+- A ballistic trajectory indicator previews object throws.
+- Environmental items can be connected to enemies or other moving objects with webs.
+
+---
+
+## Combat Sectors and Open-World Gameplay Loop
+
+- Enemies appear in hand-built combat sectors rather than purely random locations.
+- More than 60 enemy spawning zones have been placed throughout the city.
+- Bubble barriers prevent webs and projectiles from passing through them, while players can walk through.
+- Each combat sector contains a central shield generator.
+- The sector must be cleared of regular enemies and its Sniper Tower.
+- Being spotted starts a 60-second reinforcement countdown.
+- Failing to clear the sector in time calls a random boss for backup.
+- After the enemies and boss are defeated, the shield tower must be web-yanked down.
+- Destroying the tower lowers the sector shield and allows another combat zone to appear elsewhere in the city.
+
+---
+
+## Spotted Events and Boss Encounters
+
+Being detected during a combat sector can trigger one of four major encounters.
+
+### Operation Railroad
+
+- Enemies spawn aboard the train and must be located and defeated.
+- Players must get ahead of the train and use their webs to slow it down.
+- The bomb must be defused through one of three randomized challenges: Simon Says, Whack-a-Mole, or Operation.
+- A failed challenge or expired timer causes a game over.
+- A locked bomb can still be thrown into the water during a final emergency window.
+
+### AH-01 Hunter
+
+- An attack helicopter equipped for high-speed aerial combat.
+
+### AV-02 Cavalry
+
+- A heavily armored combat tank.
+
+### AW-03 Longstep
+
+- A large assault walker robot.
+
+---
+
+## Zombies Mode
+
+- Zombies Mode has been added as a complete alternate combat mode.
+- Zombies use their own movement and pursuit behavior.
+- Zombies can carry kamikaze grenades.
+- Zombies use grapple hooks while falling or jumping.
+- Zombies can teleport.
+- The mode includes dedicated sound effects, voice lines, textures, and holographic visuals.
+- A Razer Drone swarm serves as a Zombies Mode boss encounter.
+- Zombies Mode can be activated through the Corrupted Code shop item.
+
+---
+
+## Threat Level and Difficulty
+
+- Threat Level ranges from -100 to +100.
+- Negative Threat Level makes enemies increasingly deadly.
+- Positive Threat Level makes enemies increasingly perceptive.
+- Threat Level gradually moves back toward zero every five minutes.
+- Combat difficulty also scales with the number of enemies defeated during the current run.
+- Difficulty can scale through as many as 10 zone defeats.
+- Higher difficulty increases enemy accuracy, damage, perception, and encounter pressure.
+- Being defeated resets the current combat difficulty progression, but Threat Level does not reset.
+- The scoreboard displays the player’s current Threat Level and total enemy defeats.
+
+---
+
+## PvP
+
+- Player-versus-player combat has been added.
+- PvP uses an opt-in toggle, allowing players to remain outside the system.
+- Players can web onto other participating players.
+- PvP participants use player markers similar to enemy indicators.
+- Slow motion remains available during PvP.
+- Cloaking hides the player’s PvP indicator.
+- Lair Shop gameplay modifiers are disabled while PvP is active.
+- A dedicated PvP killfeed has been added.
+- Current player defeats are recorded in the statistics menu.
+- The scoreboard prioritizes player defeats while the local player is participating in PvP.
+- Being defeated in PvP relocates the player to a random location instead of performing a standard respawn.
+- Teleporting directly to other players is disabled during PvP.
+
+---
+
+## The Lair Shop and Spider-Coins
+
+- The Lair Shop has been added as an in-world store.
+- Players can purchase gameplay-altering items with Spider-Coins.
+- Purchased items are stored in a persistent inventory.
+- More than 45 items are available.
+- The Spider-Coin carrying limit has been increased from 25 to 50.
+- Patreon supporters receive two Spider-Coins for every one they collect.
+
+---
+
+## New Locations
+
+- A completely new Spider-Lair Headquarters has been added.
+- The previous loft has been replaced, with the rooftop hangout retained as a separate social area.
+- The Apartment from *Spectacular* has been added as a new explorable location.
+- The Headquarters includes seating and social spaces.
+- A finalized onboarding tutorial introduces the Evolved systems.
+- New achievements have been added.
+
+---
+
+## Evolved Menu and Interface
+
+- The entire menu has been redesigned with new animations and sound effects.
+- The head button is the primary method of opening the menu.
+- The menu opens in front of the player and remains in place, allowing the player to move around it.
+- Menu height and distance automatically adjust to avatar size.
+- The menu follows player height and aligns itself in 90-degree increments as the player turns.
+- World settings such as weather, season, and time are grouped into a dedicated World menu.
+- Voice controls have been simplified into a Global Voice option.
+- A dedicated Gadget menu and loadout selector have been added.
+- The statistics menu displays current enemy defeats and current player defeats.
+- Scoreboard sorting changes based on the player’s activity:
+  - PvP prioritizes player defeats.
+  - Combat prioritizes current-run enemy defeats.
+  - General play prioritizes overall rank.
+- A death screen displays the player’s current score.
+- Three quality presets provide simplified performance configuration.
+
+---
+
+## Crosshairs, Aiming, and Combat Feedback
+
+- A completely new crosshair system has been added.
+- Crosshairs use clear targeting feedback.
+- Left- and right-hand crosshairs merge when targeting the same point.
+- Portal aiming uses specialized crosshair behavior.
+- Crosshairs compensate for VR hand jitter when held still.
+- Asymmetrical crosshairs improve visibility at longer distances.
+- Aim assist supports NPCs, portals, throwables, rockets, grenades, other players, and environmental objects.
+- Targets can be switched easily during combat.
+- Ballistic trajectory indicators assist with throwing objects.
+- Crosshairs can be disabled.
+- Aim-assist strength can be reduced to a near-disabled level.
+- Enemy punch impacts use dedicated visual effects.
+- NPC health, awareness, type, and distance information are integrated into the enemies themselves rather than relying entirely on floating UI.
+
+---
+
+## Weather, Audio, and Immersion
+
+- Motion-compensated weather has been added.
+- Rain and storm effects remain positioned correctly around a moving player.
+- Rain stops while the player is beneath cover and resumes after they return outside.
+- Storms include expanded atmosphere, particles, and audio.
+- Slow motion affects weather, impact sounds, car horns, particles, and environmental audio.
+- A texture-noise system improves visibility and depth on flat rooftops and climbing surfaces.
+- Dynamic custom footsteps have been added.
+- Footstep pitch changes with avatar height and player speed.
+- Players can select from shoes, bare feet, gear, heavy boots, heels, and robotic footsteps.
+
+---
+
+## Camera and Cinema Tools
+
+- Auto-Cam has been added as a Patreon-exclusive intelligent spectator and recording system.
+- Auto-Cam evaluates nearby enemies, thrown objects, collision, and active gameplay to select useful camera angles.
+- More than two dozen camera styles can be selected manually.
+- Auto-Cam hides gameplay icons from the recorded camera view.
+- Auto-Cam is available on PC and is not supported by Quest VRChat cameras.
+- Follow Player allows a user to attach their movement reference to another player while still moving around them for filming.
+- The Sandbox menu has been expanded and renamed the Cinema menu.
+- NPC No-Detect options can make bosses and Sniper Towers passive while hiding combat indicators.
+- Immortality allows players to capture cinematic shots during combat, but it cannot be used for achievements, XP, or PvP.
+- A video-player blackout mode has been added for a cleaner viewing environment.
+
+---
+
+## Patron World Personalization
+
+- **$5+ patrons** can submit custom graffiti artwork to be permanently displayed throughout the skate park.
+- **$10+ patrons** can submit custom comic books to be permanently added to Spider-Lair: Evolved.
+- **Active $20 patrons** can create a personalized version of The Apartment with custom walls, floors, colors, artwork, decorations, and themes.
+- Custom apartment designs automatically load when their owner enters, allowing everyone inside to see the personalized space.
+- If multiple eligible patrons are inside, the apartment cycles between designs based on who entered first.
+- These additions allow patrons to leave a personal and lasting mark throughout the world.
